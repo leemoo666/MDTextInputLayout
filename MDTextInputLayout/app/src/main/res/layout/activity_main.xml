@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:coustom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wyc.mdtextinputlayout.MainActivity">
+
+
+    <LinearLayout style="@style/register_linear_trainee_layout">
+
+        <TextView
+            style="@style/register_label"
+            android:text="学员编号" />
+
+        <com.wyc.mdtextinputlayout.MDTextInputLayout
+            android:id="@+id/milStudentId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            coustom:bottomText="请输入东方时尚学员编号"
+            coustom:bottomColor="@color/colorAccent"
+            coustom:bottomSize="12px" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
